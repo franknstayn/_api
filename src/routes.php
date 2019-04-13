@@ -25,7 +25,6 @@ $app->get('/attendance', function ($request, $response, $args) {
     ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
 });
 
-
  // insert time_in
  $app->post('/attendance/add', function ($request, $response) {
     $input = $request->getParsedBody();
